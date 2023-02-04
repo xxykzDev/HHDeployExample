@@ -4,9 +4,8 @@
 // It will be used by the Solidity compiler to validate its version.
 pragma solidity ^0.8.9;
 
-
 // This is the main building block for smart contracts.
-contract Token {
+contract SimpleToken {
     // Some string type variables to identify the token.
     string public name = "ExampleToken";
     string public symbol = "ET";
@@ -21,7 +20,7 @@ contract Token {
     mapping(address => uint256) balances;
 
     // The Transfer event helps off-chain applications understand
-    // what happens within your contract.
+    // what happens within your contract.=
     event Transfer(address indexed _from, address indexed _to, uint256 _value);
 
     /**
